@@ -12,5 +12,5 @@ For reference:
 Dell Alienware Graphics Amplifier Product Page:
 https://www.dell.com/en-us/shop/alienware-graphics-amplifier/apd/452-bcfe/gaming
 
-Dell Alienware Graphics Amplifier: Supported Graphics Card List
+Dell Alienware Graphics Amplifier: Supported Graphics Card List:
 https://www.dell.com/support/article/en-us/sln300946/alienware-graphics-amplifier-supported-graphics-card-list?lang=en

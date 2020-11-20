@@ -31,7 +31,7 @@ No, at worst, you may need to reboot your system. However, this is exploratory, 
 
 | Manufacturer | AIB | Make | Model | Product Name | Working |
 | --- | --- | --- | --- | --- | --- |
-| Radeon 5700 XT (Reference) | Confirmed
+AMD | Reference | 5700 | XT | | Confirmed 
 
 ###### For reference
 

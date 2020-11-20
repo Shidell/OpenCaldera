@@ -1,4 +1,4 @@
-#OpenCaldera
+# OpenCaldera
 An open project looking to expand the (Dell) Alienware Graphics Amplifier (Caldera) to support Nvidia RTX 3000 and AMD RX 6000 series GPUs.
 
 This project is designed to probe and potentially expand GPU support in the Alienware Graphics Amplifier (Caldera) to include Nvidia RTX 3000 series and AMD RX 6000 series GPUs.

@@ -7,6 +7,7 @@ As of this writing (11/19/2020), Alienware (Dell) has indicated that AGA is "soo
 
 Support for AMD RX 6000 series GPUs at the current time is unknown.
 
+## How to use & Expectatations for version 0.1.0.0
 
 
 ###### For reference:

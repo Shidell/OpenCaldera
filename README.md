@@ -19,13 +19,19 @@ Download the executable ('OpenCaldera.exe') to and double-click to run; it shoul
 
 **Expected Output**
 
-Under normal Graphics Amplifier working conditions, the following is the expected result. As of 0.1.0.0, I'm looking to gather information on how this is presented in Graphics Amplifiers with RTX 3000 and RX 6000 series GPUs.
+Under normal Graphics Amplifier working conditions, the following is the expected result. As of 0.1.0.0, I'm looking to gather information on how this is presented in Graphics Amplifiers with RTX 3000 and RX 6000 series GPUs installed.
 
-![alt text](https://github.com/Shidell/OpenCaldera/blob/master/OpenCaldera/Resources/Screenshots/0.1.0.0/OpenCaldera.png)
+![Screenshot](https://github.com/Shidell/OpenCaldera/blob/master/OpenCaldera/Resources/Screenshots/0.1.0.0/OpenCaldera.png)
 
 **Will this damage my Alienware system, Graphics Amplifier, or GPU?**
 
 No, at worst, you may need to reboot your system. However, this is exploratory, and I am not liable for anything that may happen—it is your choice.
+
+### Confirmed Working GPUs
+
+| GPU | Working |
+| --- | --- |
+| Radeon 5700 XT (Reference) | Confirmed
 
 ###### For reference
 

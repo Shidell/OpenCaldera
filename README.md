@@ -17,7 +17,7 @@ Download the executable ('OpenCaldera.exe') to and double-click to run; it shoul
 
 **Expected Output:**
 
-Under normal Graphics Amplifier working conditions, the following is the expected result. As of 0.1.0.0, I'm looking to gather information how this is presented in Graphics Amplifiers with RTX 3000 and RX 6000 series GPUs.
+Under normal Graphics Amplifier working conditions, the following is the expected result. As of 0.1.0.0, I'm looking to gather information on how this is presented in Graphics Amplifiers with RTX 3000 and RX 6000 series GPUs.
 
 ![alt text](https://github.com/Shidell/OpenCaldera/blob/master/OpenCaldera/Resources/Screenshots/0.1.0.0/OpenCaldera.png)
 

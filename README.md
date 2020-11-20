@@ -65,6 +65,13 @@ And, because it's a PCIE 4x enclosure with an ATX-compatible Power Supply, I don
 
 (Additionally, the expanding size of GPUs means fitting properly within the Graphics Amplifier is another challenge, which most likely contributes to Dell's decision not to certify 3080/3090 series. I believe this, like the PSU requirements, is best left to the customer. There are many RTX and RX series GPUs that should fit comfortably without any modification; so far, an FE 3070 and (I believe) Reference RX 6800 will fit without any issue.)
 
+## Updates
+
+**11/20/2020**
+
+TimeSpy 3DMark Benchmark found of a user with an Alienware M17 R3 and 3080, presumably via AGA: https://www.3dmark.com/spy/15417032
+If you are or know this individual, please ask them to contact me.
+
 ## For Reference
 
 Dell Alienware Graphics Amplifier [Product Page](https://www.dell.com/en-us/shop/alienware-graphics-amplifier/apd/452-bcfe/gaming)

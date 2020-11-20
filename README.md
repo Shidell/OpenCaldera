@@ -23,9 +23,19 @@ Under normal Graphics Amplifier working conditions, the following is the expecte
 
 ![Screenshot](https://github.com/Shidell/OpenCaldera/blob/master/OpenCaldera/Resources/Screenshots/0.1.0.0/OpenCaldera.png)
 
-**Will this damage my Alienware system, Graphics Amplifier, or GPU?**
+**Where should I report my output?**
 
-No, at worst, you may need to reboot your system. However, this is exploratory, and I am not liable for anything that may happen.
+Please register for GitHub, and submit your feedback under "Issues". There is an open issue titled "0.1.0.0 Results" for output specific to this initial version.
+
+Registering for GitHub may be less than ideal for some of us, but I don't want to rely on any one forum post for updates (as it can be buried, and not all users will subscribe to all forums.) GitHub has the advantage of offering the 'Watch' feature on this project (above, right), which will notify those who choose to "watch" this project of updates via email.
+
+**Will/can OpenCaldera 0.1.0.0 damage my Alienware system, Graphics Amplifier, or GPU?**
+
+No, at worst, you may need to reboot your system. However, this is exploratory, and I assume no liability.
+
+## Other troubleshooting data
+
+At the moment, RTX 3000 series GPUs will initialize and be recognized by an AGA, but show up in the Device Manager with an exclamation point on the device, indicating a problem. Please add troubleshooting data related to this as an 'Issue' in the "Windows Error Reports" Issue. Specifically, screenshots of the Device Manager (and it's corresponding error), as well as Windows Event Viewer errors (screenshots/logs) are helpful.
 
 ## Confirmed Working GPUs
 
@@ -35,9 +45,13 @@ AMD | Reference | 5700 | XT | | Confirmed
 
 ## What's Next?
 
-I'll continue to investigate support for RTX 3000 and RX 6000 on Caldera—and provide updates as I have them. At the current time, it isn't clear if the issue preventing RTX 3000 series GPUs from working is a software, driver, or firmware issue. 
+I'll continue to investigate support for RTX 3000 and RX 6000—and provide updates as I have them. At the current time, it isn't clear if the issue preventing RTX 3000 series GPUs from working is a software, driver, or firmware issue. 
 
-I do not have an RTX 3000 series nor RX 6000 series GPU at the moment, so I cannot confirm whether or not RX 6000 series GPUs from AMD might be compatible already, nor can I do advanced debugging and troubleshooting.
+I do not have an RTX 3000 series nor RX 6000 series GPU at the moment, so I cannot confirm whether or not RX 6000 series GPUs from AMD might be compatible already, nor can I do advanced debugging and troubleshooting. If/when I get either, I can dive much deeper. Until then, I'm trying to collect information and probe what's possible.
+
+## Can I Help?
+
+Yes! This is open exploration, and anyone is welcome to participate, in troubleshooting, exploration, etc. I welcome collaboration and want to find a solution for all AGA owners to benefit.
 
 ## Why?
 

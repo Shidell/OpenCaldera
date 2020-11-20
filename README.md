@@ -31,7 +31,7 @@ Please register for GitHub, and submit your feedback under "Issues". There is an
 
 Registering for GitHub may be less than ideal for some of us, but I don't want to rely on any one forum post for updates (as it can be buried, and not all users will subscribe to all forums.) GitHub has the advantage of offering the 'Watch' feature on this project (above, right), which will notify those who choose to "watch" this project of updates via email.
 
-**Will/can OpenCaldera 0.1.0.0 damage my Alienware system, Graphics Amplifier, or GPU?**
+**Will/can OpenCaldera damage my Alienware system, Graphics Amplifier, or GPU?**
 
 No, at worst, you may need to reboot your system. However, this is exploratory, and I assume no liability.
 

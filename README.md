@@ -33,15 +33,25 @@ No, at worst, you may need to reboot your system. However, this is exploratory, 
 | --- | --- | --- | --- | --- | --- |
 AMD | Reference | 5700 | XT | | Confirmed 
 
-### What's Next?
+## What's Next?
 
 I'll continue to investigate support for RTX 3000 and RX 6000 on Caldera—and provide updates as I have them. At the current time, it isn't clear if the issue preventing RTX 3000 series GPUs from working is a software, driver, or firmware issue. 
 
 I do not have an RTX 3000 series nor RX 6000 series GPU at the moment, so I cannot confirm whether or not RX 6000 series GPUs from AMD might be compatible already, nor can I do advanced debugging and troubleshooting.
 
-I, like most of us, am trying to buy one.
+## Why?
 
-###### For reference
+The Alienware Graphics Amplifier is the best eGPU enclosure available—although restricted to Alienware systems, it offers a direct PCIE 4x connection to the CPU, without the overhead and/or bandwidth penalties of Thunderbolt 3.
+
+For myself and many others, it's allowed our laptops to stay cooler while gaming (as they're only cooling the CPU, the dGPU is disabled), and afforded us the benefit of a full-size, full-powered, desktop-class GPU.
+
+It's true that the dGPU in laptops today are stronger, comparatively, than those offered with the Graphics Amplifier initially debuted—but it is still the best option for gaming performance increase for laptops, new or old.
+
+And, because it's a PCIE 4x enclosure with an ATX-compatible Power Supply, I don't believe it should restrict the options of the user. At the current time, Dell is indicating that they will not certify it on the 3080 and 3090 series GPUs from Nvidia, because the built-in AGA PSU is rated for 450w, and can't meet the (potential) power requirements. That's fair—but it's also fair to inform customers and allow them to upgrade and replace the built-in PSU, just as they would in any desktop PC, to accomodate.
+
+(Additionally, the expanding size of GPUs means fitting properly within the Graphics Amplifier is another challenge, which most likely contributes to Dell's decision not to certify 3080/3090 series. I believe this, like the PSU requirements, is best left to the customer. There are many RTX and RX series GPUs that should fit comfortably without any modification; so far, an FE 3070 and (I believe) Reference RX 6800 will fit without any issue.)
+
+## For Reference
 
 Dell Alienware Graphics Amplifier [Product Page](https://www.dell.com/en-us/shop/alienware-graphics-amplifier/apd/452-bcfe/gaming)
 

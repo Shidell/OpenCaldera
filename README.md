@@ -15,6 +15,8 @@ Support for AMD RX 6000 series GPUs at the current time is unknown.
 
 Ensure that an Alienware Graphics Amplifier is attached to your PC, with the latest Alienware Graphics Amplifier software (3.0.13.0) installed. You can verify this by navigating to "C:\Program Files\Alienware\Graphics Amplifier\GraphicsAmplifier.exe", right click, select 'Properties', and selecting the 'Details' tab. You should also have a GPU (working or not working) inserted in the AGA, with all necessary power cables plugged in.
 
+You may not have an "Alienware\Graphics Amplifier" directory; in that event, look in "Alienware\Alienware Control Center".
+
 Download the executable ('OpenCaldera.exe') to and double-click to run; it should open a Command Prompt window and write brief output to the screen.
 
 **Expected Output**

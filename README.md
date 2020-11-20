@@ -9,7 +9,7 @@ Support for AMD RX 6000 series GPUs at the current time is unknown.
 
 ## Current Release: Version 0.1.1.0
 
-**Requirements:** 64-bit Operating System, .NET Framework 4.8
+**Requirements:** Windows 64-bit Operating System, .NET Framework 4.8
 
 **Test Setup**
 

@@ -33,6 +33,14 @@ No, at worst, you may need to reboot your system. However, this is exploratory, 
 | --- | --- | --- | --- | --- | --- |
 AMD | Reference | 5700 | XT | | Confirmed 
 
+### What's Next?
+
+I'll continue to investigate support for RTX 3000 and RX 6000 on Caldera—and provide updates as I have them. At the current time, it isn't clear if the issue preventing RTX 3000 series GPUs from working is a software, driver, or firmware issue. 
+
+I do not have an RTX 3000 series nor RX 6000 series GPU at the moment, so I cannot confirm whether or not RX 6000 series GPUs from AMD might be compatible already, nor can I do advanced debugging and troubleshooting.
+
+I, like most of us, am trying to buy one.
+
 ###### For reference
 
 Dell Alienware Graphics Amplifier [Product Page](https://www.dell.com/en-us/shop/alienware-graphics-amplifier/apd/452-bcfe/gaming)

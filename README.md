@@ -11,11 +11,13 @@ Support for AMD RX 6000 series GPUs at the current time is unknown.
 
 **Requirements:** 64-bit Operating System, .NET Framework 4.8
 
-**Test Setup:** Ensure that an Alienware Graphics Amplifier is attached to your PC, with the latest Alienware Graphics Amplifier software (3.0.13.0) installed. You can verify this by navigating to "C:\Program Files\Alienware\Graphics Amplifier\GraphicsAmplifier.exe", right click, select 'Properties', and selecting the 'Details' tab. You should also have a GPU (working or not working) inserted in the AGA, with all necessary power cables plugged in.
+**Test Setup**
+
+Ensure that an Alienware Graphics Amplifier is attached to your PC, with the latest Alienware Graphics Amplifier software (3.0.13.0) installed. You can verify this by navigating to "C:\Program Files\Alienware\Graphics Amplifier\GraphicsAmplifier.exe", right click, select 'Properties', and selecting the 'Details' tab. You should also have a GPU (working or not working) inserted in the AGA, with all necessary power cables plugged in.
 
 Download the executable ('OpenCaldera.exe') to and double-click to run; it should open a Command Prompt window and write brief output to the screen.
 
-**Expected Output:**
+**Expected Output**
 
 Under normal Graphics Amplifier working conditions, the following is the expected result. As of 0.1.0.0, I'm looking to gather information on how this is presented in Graphics Amplifiers with RTX 3000 and RX 6000 series GPUs.
 
@@ -25,7 +27,7 @@ Under normal Graphics Amplifier working conditions, the following is the expecte
 
 No, at worst, you may need to reboot your system. However, this is exploratory, and I am not liable for anything that may happen—it is your choice.
 
-###### For reference:
+###### For reference
 
 Dell Alienware Graphics Amplifier [Product Page](https://www.dell.com/en-us/shop/alienware-graphics-amplifier/apd/452-bcfe/gaming)
 

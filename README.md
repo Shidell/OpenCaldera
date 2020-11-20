@@ -7,7 +7,7 @@ As of this writing (11/19/2020), Alienware (Dell) has indicated that AGA is "soo
 
 Support for AMD RX 6000 series GPUs at the current time is unknown.
 
-## Initial Release: Version 0.1.0.0
+## Current Release: Version 0.1.1.0
 
 **Requirements:** 64-bit Operating System, .NET Framework 4.8
 

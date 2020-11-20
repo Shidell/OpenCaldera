@@ -7,6 +7,8 @@ As of this writing (11/19/2020), Alienware (Dell) has indicated that AGA is "soo
 
 Support for AMD RX 6000 series GPUs at the current time is unknown.
 
+
+
 ###### For reference:
 
 Dell Alienware Graphics Amplifier [Product Page](https://www.dell.com/en-us/shop/alienware-graphics-amplifier/apd/452-bcfe/gaming)

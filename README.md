@@ -29,8 +29,8 @@ No, at worst, you may need to reboot your system. However, this is exploratory, 
 
 ## Confirmed Working GPUs
 
-| GPU | Working |
-| --- | --- |
+| Manufacturer | AIB | Make | Model | Product Name | Working |
+| --- | --- | --- | --- | --- | --- |
 | Radeon 5700 XT (Reference) | Confirmed
 
 ###### For reference

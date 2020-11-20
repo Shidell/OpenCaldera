@@ -25,7 +25,7 @@ Under normal Graphics Amplifier working conditions, the following is the expecte
 
 **Will this damage my Alienware system, Graphics Amplifier, or GPU?**
 
-No, at worst, you may need to reboot your system. However, this is exploratory, and I am not liable for anything that may happen—it is your choice.
+No, at worst, you may need to reboot your system. However, this is exploratory, and I am not liable for anything that may happen.
 
 ## Confirmed Working GPUs
 

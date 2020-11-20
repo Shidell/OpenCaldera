@@ -16,6 +16,7 @@ Support for AMD RX 6000 series GPUs at the current time is unknown.
 Download the executable ('OpenCaldera.exe') to and double-click to run; it should open a Command Prompt window and write brief output to the screen.
 
 **Expected Output:**
+![alt text](https://github.com/Shidell/OpenCaldera/blob/master/OpenCaldera/Resources/Screenshots/0.1.0.0/OpenCaldera.png)
 
 **Will this damage my Alienware system, Graphics Amplifier, or GPU?**
 

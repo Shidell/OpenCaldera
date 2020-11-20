@@ -2,6 +2,7 @@
 using AlienLabs.GraphicsAmplifier.Domain.Classes.Factories;
 using AlienLabs.GraphicsAmplifier.ServiceController;
 using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Reflection;
@@ -14,7 +15,7 @@ namespace OpenCaldera
         [MethodImpl(MethodImplOptions.NoInlining)]
         private static Assembly ResolveAssemblies(object sender, ResolveEventArgs args)
         {
-            // Parse the requested assembly name and append ".dll" to form a filename. (e.g. "Library.dll")
+            // Parse the requested assembly name.
             string requestedAssembly = args.Name.Substring(0, args.Name.IndexOf(','));
 
             // Retrieve a list of already loaded assemblies; if the requested assembly is already loaded, return it.
@@ -22,23 +23,30 @@ namespace OpenCaldera
                 if (assembly.FullName.Contains(requestedAssembly))
                     return assembly;
 
-            // Search for the requested Assembly in expected locations.
-            string p1 = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles), "Alienware\\Graphics Amplifier", requestedAssembly);
-            string p2 = p1 + ".exe";
-            p1 += ".dll";
+            List<string> paths = new List<string>();
 
-            string p3 = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ProgramFilesX86), "Alienware\\Graphics Amplifier", requestedAssembly);
-            string p4 = p3 + ".exe";
-            p3 += ".dll";
+            paths.Add(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles), "Alienware\\Graphics Amplifier"));
+            paths.Add(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ProgramFilesX86), "Alienware\\Graphics Amplifier"));
+            paths.Add(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles), "Alienware\\Alienware Command Center"));
+            paths.Add(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ProgramFilesX86), "Alienware\\Alienware Command Center"));
 
-            //Directory.GetFiles()
+            List<string> files = new List<string>();
+
+            foreach (var path in paths)
+                if (Directory.Exists(path))
+                    foreach (var filepath in Directory.GetFiles(path))
+                        files.Add(filepath);
 
             string found = String.Empty;
 
-            if (File.Exists(p1)) found = p1;
-            if (File.Exists(p2)) found = p2;
-            if (File.Exists(p3)) found = p3;
-            if (File.Exists(p4)) found = p4;
+            foreach (var file in files)
+            {
+                if (file.Contains(requestedAssembly))
+                {
+                    found = file;
+                    break;
+                }
+            }
 
             if (string.IsNullOrWhiteSpace(found))
                 Console.WriteLine($"! The requested Assembly could not be located: {requestedAssembly}");
@@ -75,8 +83,7 @@ namespace OpenCaldera
             Console.WriteLine($"OpenCaldera {FileVersionInfo.GetVersionInfo(Assembly.GetExecutingAssembly().Location).FileVersion}\n");
 
             // Add an Assembly Resolver to locate Alienware Libraries as needed.
-            // No code utilizing an Alienware Library can be referenced in this method, or .NET will attempt to resolve the Assembly
-            // prior to adding this custom handler.
+            // No code utilizing an Alienware Library can be referenced in this method, or .NET will attempt to resolve the Assembly prior to adding this custom handler.
             AppDomain.CurrentDomain.AssemblyResolve += ResolveAssemblies;
 
             ReadAGABIOSProperties();

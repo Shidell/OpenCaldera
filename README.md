@@ -19,7 +19,7 @@ Download the executable ('OpenCaldera.exe') to and double-click to run; it shoul
 
 **Will this damage my Alienware system, Graphics Amplifier, or GPU?**
 
-No, at worst, you may need to reboot your system. However, this is exploratory, and I am not liable for anything that may happen.
+No, at worst, you may need to reboot your system. However, this is exploratory, and I am not liable for anything that may happen—it is your choice.
 
 ###### For reference:
 

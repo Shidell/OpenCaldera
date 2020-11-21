@@ -61,8 +61,28 @@
       <Link>README.md</Link>
     </None>
     <None Include="App.config" />
+    <None Include="Resources\AWCCDriver\AMD64\awccdriver.cat" />
+    <None Include="Resources\AWCCDriver\AMD64\AWCCDriver.sys" />
+    <None Include="Resources\GraphicsAmplifierSoftwareInstaller\Alienware Graphics Amplifier Software Installer.msi" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\AWCCDriver\AMD64\awccdriver.inf" />
+    <Content Include="Resources\AWCCDriver\AMD64\WdfCoInstaller01009.dll" />
+    <Content Include="Resources\GraphicsAmplifierSoftwareInstaller\Program Files 64\Alienware\Graphics Amplifier\CommandCenter_PlugIn.dll" />
+    <Content Include="Resources\GraphicsAmplifierSoftwareInstaller\Program Files 64\Alienware\Graphics Amplifier\CommonTools.dll" />
+    <Content Include="Resources\GraphicsAmplifierSoftwareInstaller\Program Files 64\Alienware\Graphics Amplifier\en-GB\CommonTools.resources.dll" />
+    <Content Include="Resources\GraphicsAmplifierSoftwareInstaller\Program Files 64\Alienware\Graphics Amplifier\en-GB\GraphicsAmplifier.resources.dll" />
+    <Content Include="Resources\GraphicsAmplifierSoftwareInstaller\Program Files 64\Alienware\Graphics Amplifier\en-GB\GraphicsAmplifierServiceController.resources.dll" />
+    <Content Include="Resources\GraphicsAmplifierSoftwareInstaller\Program Files 64\Alienware\Graphics Amplifier\GraphicsAmplifier.Domain.dll" />
+    <Content Include="Resources\GraphicsAmplifierSoftwareInstaller\Program Files 64\Alienware\Graphics Amplifier\GraphicsAmplifier.exe" />
+    <Content Include="Resources\GraphicsAmplifierSoftwareInstaller\Program Files 64\Alienware\Graphics Amplifier\GraphicsAmplifier.RemotingService.dll" />
+    <Content Include="Resources\GraphicsAmplifierSoftwareInstaller\Program Files 64\Alienware\Graphics Amplifier\GraphicsAmplifier.UpgradeService.dll" />
+    <Content Include="Resources\GraphicsAmplifierSoftwareInstaller\Program Files 64\Alienware\Graphics Amplifier\GraphicsAmplifierServiceController.exe" />
+    <Content Include="Resources\GraphicsAmplifierSoftwareInstaller\Program Files 64\Alienware\Graphics Amplifier\GraphicsAmplifierWindowsService.exe" />
+    <Content Include="Resources\GraphicsAmplifierSoftwareInstaller\Program Files 64\Alienware\Graphics Amplifier\KeystrokesDetector.dll" />
+    <Content Include="Resources\GraphicsAmplifierSoftwareInstaller\Program Files 64\Alienware\Graphics Amplifier\System.Windows.Interactivity.dll" />
+    <Content Include="Resources\GraphicsAmplifierSoftwareInstaller\Program Files 64\Alienware\Graphics Amplifier\System.Windows.Interactivity.xml" />
+    <Content Include="Resources\GraphicsAmplifierSoftwareInstaller\System64\GraphicsAmplifierSWBiosSupportAPI.dll" />
     <Content Include="Resources\Screenshots\0.1.0.0\OpenCaldera.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

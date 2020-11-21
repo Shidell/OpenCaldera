@@ -1,0 +1,93 @@
+;
+; AWCCDriver.inf
+;
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=System
+ClassGuid={4D36E97D-E325-11CE-BFC1-08002BE10318}
+Provider=%ManufacturerName%
+CatalogFile=awccdriver.cat
+DriverVer = 10/28/2017,1.0.1.0
+
+[DestinationDirs]
+DefaultDestDir = 12
+AWCCDriver_Device_CoInstaller_CopyFiles = 11
+
+; ================= Class section =====================
+
+
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+AWCCDriver.sys  = 1,,
+WdfCoInstaller01009.dll=1 ; make sure the number matches with SourceDisksNames
+
+;*****************************************
+; Install Section
+;*****************************************
+
+[Manufacturer]
+%ManufacturerName%=Standard,NTamd64
+
+[Standard.NTamd64]
+%AWCCDriver.DeviceDesc%=AWCCDriver_Device, Root\AWCC
+
+[AWCCDriver_Device.NT]
+CopyFiles=Drivers_Dir
+
+[Drivers_Dir]
+AWCCDriver.sys
+
+[AWCCDriver_Device.NT.HW]
+AddReg=AWCCDriver_Device_AddReg
+
+
+[AWCCDriver_Device_AddReg]                            
+HKR,,DeviceCharacteristics,0x10001,0x0100         ; Use same security checks on relative opens
+HKR,,Security,,"D:P(A;;GA;;;BA)(A;;GA;;;SY)"      ; Allow generic-all access to Built-in administrators and Local system 
+
+
+
+;-------------- Service installation
+[AWCCDriver_Device.NT.Services]
+AddService = AWCCDriver,%SPSVCINST_ASSOCSERVICE%, AWCCDriver_Service_Inst
+
+; -------------- AWCCDriver driver install sections
+[AWCCDriver_Service_Inst]
+DisplayName    = %AWCCDriver.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\AWCCDriver.sys
+LoadOrderGroup = Extended Base
+
+;
+;--- AWCCDriver_Device Coinstaller installation ------
+;
+
+
+[AWCCDriver_Device.NT.CoInstallers]
+AddReg=AWCCDriver_Device_CoInstaller_AddReg
+CopyFiles=AWCCDriver_Device_CoInstaller_CopyFiles
+
+[AWCCDriver_Device_CoInstaller_AddReg]
+HKR,,CoInstallers32,0x00010000, "WdfCoInstaller01009.dll,WdfCoInstaller"
+
+[AWCCDriver_Device_CoInstaller_CopyFiles]
+WdfCoInstaller01009.dll
+
+[AWCCDriver_Device.NT.Wdf]
+KmdfService =  AWCCDriver, AWCCDriver_wdfsect
+[AWCCDriver_wdfsect]
+KmdfLibraryVersion = 1.9
+
+[Strings]
+SPSVCINST_ASSOCSERVICE= 0x00000002
+ManufacturerName="Dell Inc."
+ClassName="System"
+DiskName = "AWCC Driver Installation Disk"
+AWCCDriver.DeviceDesc = "AWCC Driver"
+AWCCDriver.SVCDESC = "AWCC Driver Service"

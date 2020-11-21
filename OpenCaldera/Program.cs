@@ -88,7 +88,7 @@ namespace OpenCaldera
 
             ReadAGABIOSProperties();
         }
-
+        
         static void ReadAGABIOSProperties()
         {
             // Must be constructed first, otherwise GraphicsAmplifierBIOSProvider will not populate, regardless of calling "Initialize()".

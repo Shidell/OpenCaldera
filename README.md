@@ -67,6 +67,10 @@ And, because it's a PCIE 4x enclosure with an ATX-compatible Power Supply, I don
 
 ## Updates
 
+**11/28/2020**
+
+I was able to purchase an AMD Radeon RX 6800, and it works just fine in the AGA, where the RTX 3070 was having so much difficulty. I've posted my findings, including opinion on the subject, here: https://www.reddit.com/r/Alienware/comments/jxvnga/project_opencaldera_exploring_adding_unofficial/
+
 **11/20/2020**
 
 TimeSpy 3DMark Benchmark found of a user with an Alienware M17 R3 and 3080, presumably via AGA: https://www.3dmark.com/spy/15417032
